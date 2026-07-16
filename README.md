@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Proyek Pertama Next.js
 
-## Getting Started
+Website portofolio sederhana yang dibuat menggunakan **Next.js** sebagai tugas mata pelajaran Rekayasa Perangkat Lunak (RPL).
 
-First, run the development server:
+## 📖 Deskripsi
+
+Project ini merupakan website portofolio yang berisi beberapa halaman, yaitu:
+
+- 🏠 Beranda
+- 👤 Profil
+- 📁 Portofolio
+- 📞 Kontak
+
+Website dibuat menggunakan framework **Next.js** dengan App Router serta CSS untuk mempercantik tampilan.
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+- Next.js
+- React
+- TypeScript
+- CSS
+
+---
+
+## 📂 Struktur Project
+
+```
+app/
+│── kontak/
+│   └── page.tsx
+│── portofolio/
+│   └── page.tsx
+│── profil/
+│   └── page.tsx
+│── favicon.ico
+│── globals.css
+│── layout.tsx
+│── page.tsx
+
+public/
+```
+
+---
+
+## 🚀 Cara Menjalankan Project
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/Vren-sys/Proyek-pertama-next.js.git
+```
+
+### 2. Masuk ke Folder Project
+
+```bash
+cd Proyek-pertama-next.js
+```
+
+### 3. Install Dependency
+
+```bash
+npm install
+```
+
+### 4. Jalankan Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 5. Buka Browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📄 Fitur
 
-To learn more about Next.js, take a look at the following resources:
+- Halaman Beranda
+- Halaman Profil
+- Halaman Portofolio
+- Halaman Kontak
+- Navigasi antar halaman
+- Desain menggunakan CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👨‍💻 Author
 
-## Deploy on Vercel
+**Nama:** Muhammad Rafi Rizki Pratama
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Kelas:** XII RPL 3
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Jurusan:** Rekayasa Perangkat Lunak (RPL)
+
+---
+
+## 📌 Repository
+
+https://github.com/Vren-sys/Proyek-pertama-next.js
+
+---
+
+## 📜 Lisensi
+
+Project ini dibuat untuk keperluan pembelajaran dan tugas sekolah.
