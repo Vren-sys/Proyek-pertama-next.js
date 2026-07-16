@@ -1,20 +1,21 @@
 import Link from "next/link";
 
-export default function Home() {
+export default function Kontak() {
+  
   return (
     <main>
-      <h1>Selamat datang di halaman utama</h1>
+      <h1>Kontak</h1>
 
       <p>
-         Website profil dan portofolio kami
+        Website ini dibuat sebagai tugas Next.js dari Pak Fakih
       </p>
 
-    
+      <button>Kirim Pesan</button>
 
       <nav>
+        <Link href="/">Beranda</Link>
         <Link href="/profil">Profil</Link>
         <Link href="/portofolio">Portofolio</Link>
-        <Link href="/kontak">Kontak</Link>
       </nav>
     </main>
   );
