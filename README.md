@@ -91,7 +91,7 @@ http://localhost:3000
 
 ## 👨‍💻 Author
 
-**Nama:** Muhammad Rafi Rizki Pratama
+**Nama:** Muhammad Rafi Rizki Pratama dan Surendra Wastujatmiko
 
 **Kelas:** XII RPL 3
 
