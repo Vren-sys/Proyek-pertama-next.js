@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Home() {
   return (
     <main>
@@ -8,14 +6,6 @@ export default function Home() {
       <p>
          Website profil dan portofolio kami
       </p>
-
-    
-
-      <nav>
-        <Link href="/profil">Profil</Link>
-        <Link href="/portofolio">Portofolio</Link>
-        <Link href="/kontak">Kontak</Link>
-      </nav>
     </main>
   );
 }

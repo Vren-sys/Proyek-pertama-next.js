@@ -1,7 +1,4 @@
-import Link from "next/link";
-
 export default function Kontak() {
-  
   return (
     <main>
       <h1>Kontak</h1>
@@ -11,12 +8,6 @@ export default function Kontak() {
       </p>
 
       <button>Kirim Pesan</button>
-
-      <nav>
-        <Link href="/">Beranda</Link>
-        <Link href="/profil">Profil</Link>
-        <Link href="/portofolio">Portofolio</Link>
-      </nav>
     </main>
   );
 }

@@ -7,7 +7,13 @@
 
 /* Body */
 body {
-  background-color: #f4f6f9;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 88% 8%, rgba(255, 87, 58, 0.72) 0, rgba(255, 147, 80, 0.4) 10%, transparent 25%),
+    radial-gradient(ellipse at 25% 90%, rgba(0, 146, 235, 0.88) 0, rgba(45, 167, 255, 0.48) 16%, transparent 34%),
+    radial-gradient(ellipse at 63% 84%, rgba(135, 80, 245, 0.7) 0, rgba(182, 115, 255, 0.32) 18%, transparent 36%),
+    #f4f6f9;
+  background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
 }
@@ -33,6 +39,40 @@ h2 {
   margin-bottom: 10px;
 }
 
+.profileGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.profileCard {
+  padding: 20px;
+  border: 1px solid #dce6f2;
+  border-radius: 10px;
+  background: #f8fbff;
+}
+
+.profileCard h2 {
+  margin-top: 0;
+}
+
+.portfolioGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.portfolioCard {
+  padding: 20px;
+  border: 1px solid #dce6f2;
+  border-radius: 10px;
+  background: #f8fbff;
+}
+
+.portfolioCard h2 {
+  margin-top: 0;
+}
+
 /* Text */
 p {
   line-height: 1.6;
@@ -49,24 +89,71 @@ li {
   margin-bottom: 8px;
 }
 
-/* Navigation */
-nav {
-  display: flex;
-  gap: 15px;
-  margin-top: 20px;
+/* Navbar */
+.siteHeader {
+  background: linear-gradient(100deg, #087fd1, #6255d8 58%, #8b5cf6);
+  box-shadow: 0 3px 14px rgba(50, 64, 150, 0.28);
 }
 
-a {
+.navbar {
+  max-width: 1100px;
+  min-height: 72px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.navLinks {
+  display: flex;
+  gap: 8px;
+}
+
+.navLinks a {
   text-decoration: none;
   color: white;
-  background: #0070f3;
-  padding: 10px 15px;
+  padding: 10px 14px;
   border-radius: 6px;
   transition: 0.3s;
 }
 
-a:hover {
-  background: #0056b3;
+.navLinks a:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    min-height: auto;
+    padding: 16px 20px;
+    align-items: flex-start;
+    gap: 14px;
+    flex-direction: column;
+  }
+
+  .navLinks {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navLinks a {
+    padding: 8px;
+  }
+
+  .profileGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolioGrid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Button */
