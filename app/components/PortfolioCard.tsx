@@ -1,7 +1,12 @@
+type Project = {
+  title: string;
+  image?: string;
+};
+
 type PortfolioCardProps = {
   name: string;
   skills: string[];
-  projects: string[];
+  projects: Project[];
 };
 
 export default function PortfolioCard({
@@ -21,11 +26,23 @@ export default function PortfolioCard({
       </ul>
 
       <h3>Proyek</h3>
-      <ul>
+      <br />
+      <div className="projectsGrid">
         {projects.map((project) => (
-          <li key={project}>{project}</li>
+          <figure key={project.title} className="projectCard">
+            {project.image ? (
+              <img
+                src={`/images/project/${project.image}`}
+                alt={project.title}
+                className="projectImage"
+              />
+            ) : (
+              <div className="projectImage empty" />
+            )}
+            <figcaption>{project.title}</figcaption>
+          </figure>
         ))}
-      </ul>
+      </div>
     </article>
   );
 }

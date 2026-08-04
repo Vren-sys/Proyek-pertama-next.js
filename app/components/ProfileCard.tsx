@@ -5,6 +5,7 @@ type ProfileCardProps = {
   hobi: string;
   email: string;
   telepon: string;
+  photo?: string;
 };
 
 export default function ProfileCard({
@@ -14,9 +15,20 @@ export default function ProfileCard({
   hobi,
   email,
   telepon,
+  photo,
 }: ProfileCardProps) {
   return (
     <article className="profileCard">
+      {photo ? (
+        <img
+          src={`/images/profil/${photo}`}
+          alt={`${name} photo`}
+          className="profilePhoto"
+        />
+      ) : (
+        <div className="profilePhoto empty" />
+      )}
+
       <h2>{name}</h2>
       <p>
         <strong>Kelas:</strong> {kelas}

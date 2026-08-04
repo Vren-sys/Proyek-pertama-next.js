@@ -13,7 +13,7 @@ export default function Navbar({ items }: NavbarProps) {
   return (
     <header className="siteHeader">
       <nav className="navbar" aria-label="Navigasi utama">
-        <div className="brand">Profil & Portofolio</div>
+        <div className="brand">Portofolio</div>
 
         <div className="navLinks">
           {items.map((item) => (

@@ -4,12 +4,14 @@ const portfolios = [
   {
     name: "Surendra Wastujatmiko",
     skills: ["HTML", "CSS", "JavaScript", "React.js", "C#", "Next.js"],
-    projects: ["Website PEPEKAPE", "Website WisataId", "Aplikasi Kasir Sederhana"],
+    projects: [
+      { title: "Pepekape adalah web yang menyajikan berbagai pelatihan bagi mahasiswa", image: "PEPEKAPE.png" },
+    ],
   },
   {
     name: "Muhammad Rafi Rizki Pratama",
     skills: ["HTML", "CSS", "JavaScript", "React.js", "C#", "Next.js"],
-    projects: ["Website Ringkita", "Website Sekolah", "Aplikasi Kasir Sederhana"],
+    projects: [],
   },
 ];
 
