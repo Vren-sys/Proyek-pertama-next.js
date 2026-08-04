@@ -2,9 +2,16 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 
 export const metadata = {
-  title: "Website Profil & Portofolio",
+  title: "Portofolio",
   description: "Tugas Next.js",
 };
+
+const navItems = [
+  { href: "/", label: "Beranda" },
+  { href: "/profil", label: "Profil" },
+  { href: "/portofolio", label: "Portofolio" },
+  { href: "/kontak", label: "Kontak" },
+];
 
 export default function RootLayout({
   children,
@@ -14,7 +21,8 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body>
-        <Navbar />
+        <Navbar items={navItems} />
+
         {children}
       </body>
     </html>

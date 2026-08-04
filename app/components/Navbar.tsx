@@ -1,13 +1,26 @@
 import Link from "next/link";
 
-export default function Navbar() {
+type NavItem = {
+  href: string;
+  label: string;
+};
+
+type NavbarProps = {
+  items: NavItem[];
+};
+
+export default function Navbar({ items }: NavbarProps) {
   return (
     <header className="siteHeader">
       <nav className="navbar" aria-label="Navigasi utama">
+        <div className="brand">Profil & Portofolio</div>
+
         <div className="navLinks">
-          <Link href="/">Beranda</Link>
-          <Link href="/profil">Profil</Link>
-          <Link href="/portofolio">Portofolio</Link>
+          {items.map((item) => (
+            <Link key={item.href} href={item.href}>
+              {item.label}
+            </Link>
+          ))}
         </div>
       </nav>
     </header>

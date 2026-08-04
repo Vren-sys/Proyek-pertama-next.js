@@ -8,11 +8,7 @@
 /* Body */
 body {
   min-height: 100vh;
-  background:
-    radial-gradient(circle at 88% 8%, rgba(255, 87, 58, 0.72) 0, rgba(255, 147, 80, 0.4) 10%, transparent 25%),
-    radial-gradient(ellipse at 25% 90%, rgba(0, 146, 235, 0.88) 0, rgba(45, 167, 255, 0.48) 16%, transparent 34%),
-    radial-gradient(ellipse at 63% 84%, rgba(135, 80, 245, 0.7) 0, rgba(182, 115, 255, 0.32) 18%, transparent 36%),
-    #f4f6f9;
+  background: #ffffff;
   background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
@@ -30,7 +26,7 @@ main {
 
 /* Heading */
 h1 {
-  color: #0070f3;
+  color: #111111;
   margin-bottom: 20px;
 }
 
@@ -91,8 +87,8 @@ li {
 
 /* Navbar */
 .siteHeader {
-  background: linear-gradient(100deg, #087fd1, #6255d8 58%, #8b5cf6);
-  box-shadow: 0 3px 14px rgba(50, 64, 150, 0.28);
+  background: #000000;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.25);
 }
 
 .navbar {
@@ -160,7 +156,7 @@ li {
 button {
   margin-top: 15px;
   padding: 10px 20px;
-  background: #28a745;
+  background: #111111;
   color: white;
   border: none;
   border-radius: 6px;
@@ -169,7 +165,7 @@ button {
 }
 
 button:hover {
-  background: #218838;
+  background: #333333;
 }
 
 hr {

@@ -4,7 +4,7 @@ export default function Kontak() {
       <h1>Kontak</h1>
 
       <p>
-        Website ini dibuat sebagai tugas Next.js dari Pak Fakih
+        Jika ada yang ingin ditanyakan bisa hubungi kami dengan menekan tombol dibawah
       </p>
 
       <button>Kirim Pesan</button>
