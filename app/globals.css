@@ -69,6 +69,69 @@ h2 {
   margin-top: 0;
 }
 
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.projectCard {
+  border: 1px solid #dce6f2;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+.projectImage {
+  width: 100%;
+  height: 300px;
+  zoom: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.projectImage.empty {
+  background: #e0e0e0;
+}
+
+figcaption {
+  padding: 12px;
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+}
+
+.projectFooter {
+  padding: 8px 12px;
+  border-top: 1px solid #dce6f2;
+  display: flex;
+  justify-content: center;
+}
+
+.likeButton {
+  background: white;
+  color: #ff6b6b;
+  border: 2px solid #ff6b6b;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin: 0;
+}
+
+.likeButton:hover {
+  background: #ff6b6b;
+  color: white;
+}
+
+.likeButton.liked {
+  background: #ff6b6b;
+  color: white;
+  border-color: #ff6b6b;
+}
+
 /* Text */
 p {
   line-height: 1.6;
@@ -170,4 +233,126 @@ button:hover {
 
 hr {
   margin: 20px 0;
+}
+
+/* Guestbook/Comments */
+.formSection {
+  background: #f8fbff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #dce6f2;
+  margin-bottom: 30px;
+}
+
+.commentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: #111111;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 10px 12px;
+  border: 1px solid #dce6f2;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #111111;
+  box-shadow: 0 0 0 2px rgba(17, 17, 17, 0.1);
+}
+
+.submitButton {
+  background: #111111;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.submitButton:hover {
+  background: #333333;
+}
+
+.commentsSection {
+  margin-top: 30px;
+}
+
+.commentsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.commentItem {
+  background: #f8fbff;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #dce6f2;
+}
+
+.commentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.commentHeader h3 {
+  margin: 0;
+  color: #111111;
+  font-size: 1rem;
+}
+
+.commentDate {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.commentEmail {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.commentMessage {
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.noComments {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .commentHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
 }

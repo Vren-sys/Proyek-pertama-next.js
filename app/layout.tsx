@@ -10,6 +10,7 @@ const navItems = [
   { href: "/", label: "Beranda" },
   { href: "/profil", label: "Profil" },
   { href: "/portofolio", label: "Portofolio" },
+  { href: "/portofolio/bukutamu", label: "Buku Tamu" },
   { href: "/kontak", label: "Kontak" },
 ];
 
